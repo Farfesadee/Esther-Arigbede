@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiSearch, FiMenu, FiX } from "react-icons/fi";
+import SearchBar from "./SearchBar";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   const toggleDropdown = (name) => {
     setOpenDropdown(openDropdown === name ? null : name);
@@ -29,10 +31,7 @@ const Navbar = () => {
 
           {/* About Me */}
           <div className="relative">
-            <button
-              onClick={() => toggleDropdown("about")}
-              className="hover:text-green-300 transition"
-            >
+            <button onClick={() => toggleDropdown("about")} className="hover:text-green-300 transition">
               About Me
             </button>
 
@@ -53,10 +52,7 @@ const Navbar = () => {
 
           {/* Philosophies */}
           <div className="relative">
-            <button
-              onClick={() => toggleDropdown("philosophy")}
-              className="hover:text-green-300 transition"
-            >
+            <button onClick={() => toggleDropdown("philosophy")} className="hover:text-green-300 transition">
               Educational Philosophies
             </button>
 
@@ -68,10 +64,7 @@ const Navbar = () => {
                 <Link to="/philosophies/i-believe" className="block px-4 py-2 hover:bg-green-700">
                   I Believe
                 </Link>
-                <Link
-                  to="/philosophies/inspirational-quotes"
-                  className="block px-4 py-2 hover:bg-green-700"
-                >
+                <Link to="/philosophies/inspirational-quotes" className="block px-4 py-2 hover:bg-green-700">
                   Inspirational Quotes
                 </Link>
               </div>
@@ -80,31 +73,19 @@ const Navbar = () => {
 
           {/* Professional Learnings */}
           <div className="relative">
-            <button
-              onClick={() => toggleDropdown("learning")}
-              className="hover:text-green-300 transition"
-            >
+            <button onClick={() => toggleDropdown("learning")} className="hover:text-green-300 transition">
               Professional Learnings
             </button>
 
             {openDropdown === "learning" && (
               <div className="absolute bg-green-800/95 shadow-xl rounded-lg py-3 top-10 w-64">
-                <Link
-                  to="/professional/learnings/autobiography"
-                  className="block px-4 py-2 hover:bg-green-700"
-                >
+                <Link to="/professional/learnings/autobiography" className="block px-4 py-2 hover:bg-green-700">
                   Autobiography
                 </Link>
-                <Link
-                  to="/professional/learnings/reconciliation"
-                  className="block px-4 py-2 hover:bg-green-700"
-                >
+                <Link to="/professional/learnings/reconciliation" className="block px-4 py-2 hover:bg-green-700">
                   Journey Towards Reconciliation
                 </Link>
-                <Link
-                  to="/professional/learnings/field-experiences"
-                  className="block px-4 py-2 hover:bg-green-700"
-                >
+                <Link to="/professional/learnings/field-experiences" className="block px-4 py-2 hover:bg-green-700">
                   Field Experiences
                 </Link>
               </div>
@@ -112,12 +93,23 @@ const Navbar = () => {
           </div>
 
           {/* Search */}
-          <button className="hover:text-green-300 transition text-xl">
-            <FiSearch />
-          </button>
+          <div className="relative">
+            <button
+              onClick={() => setSearchOpen(!searchOpen)}
+              className="hover:text-green-300 transition text-xl"
+            >
+              <FiSearch />
+            </button>
+
+            {searchOpen && (
+              <div className="absolute right-0 mt-2">
+                <SearchBar onClose={() => setSearchOpen(false)} />
+              </div>
+            )}
+          </div>
         </div>
 
-        {/* Mobile Toggle Button */}
+        {/* Mobile Toggle */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-2xl"
@@ -170,7 +162,7 @@ const Navbar = () => {
             </div>
           )}
 
-          {/* Search */}
+          {/* Search (Mobile) */}
           <button className="text-xl mt-3">
             <FiSearch />
           </button>
