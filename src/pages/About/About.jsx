@@ -32,7 +32,7 @@ const AboutMe = () => {
 
           <p className="text-green-100 mt-6 leading-8 text-lg">
             {/* Your actual bio text goes here */}
-            I am an Art Education student at the University of Regina,
+            I am an Early Childhood Education student at the University of Regina,
             passionate about creativity, expression, and building meaningful
             learning experiences through visual arts...
           </p>

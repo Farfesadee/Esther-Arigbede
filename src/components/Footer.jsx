@@ -6,7 +6,7 @@ const Footer = () => {
       <p className="text-lg">
         Contact me via email:{" "}
         <a
-          href="mailto:Estherarigbede@gmail.com"
+          href="mailto: Estherarigbede@gmail.com"
           className="font-semibold text-green-200"
         >
           Estherarigbede@gmail.com
