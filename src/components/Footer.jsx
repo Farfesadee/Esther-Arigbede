@@ -9,7 +9,7 @@ const Footer = () => {
           href="mailto:your-email@example.com"
           className="font-semibold text-green-200"
         >
-          your-email@example.com
+          Estherarigbede@gmail.com
         </a>
       </p>
     </footer>

@@ -29,7 +29,7 @@ const FieldExperiences = () => {
             <p>
               Working in real educational environments helped me understand the importance of
               patience, flexibility, and meaningful student connection. These experiences have
-              strengthened my passion for teaching and affirmed my commitment to Art Education.
+              strengthened my passion for teaching and affirmed my commitment to Education.
             </p>
           </div>
         </div>

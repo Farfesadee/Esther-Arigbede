@@ -25,13 +25,13 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8">
 
           {/* Home */}
-          <Link to="/" className="hover:text-green-300 transition">
+          <Link to="/" className="hover:text-green-300 transition cursor-pointer">
             Home
           </Link>
 
           {/* About Me */}
           <div className="relative">
-            <button onClick={() => toggleDropdown("about")} className="hover:text-green-300 transition">
+            <button onClick={() => toggleDropdown("about")} className="hover:text-green-300 transition cursor-pointer">
               About Me
             </button>
 
@@ -52,7 +52,7 @@ const Navbar = () => {
 
           {/* Philosophies */}
           <div className="relative">
-            <button onClick={() => toggleDropdown("philosophy")} className="hover:text-green-300 transition">
+            <button onClick={() => toggleDropdown("philosophy")} className="hover:text-green-300 transition cursor-pointer">
               Educational Philosophies
             </button>
 
@@ -73,7 +73,7 @@ const Navbar = () => {
 
           {/* Professional Learnings */}
           <div className="relative">
-            <button onClick={() => toggleDropdown("learning")} className="hover:text-green-300 transition">
+            <button onClick={() => toggleDropdown("learning")} className="hover:text-green-300 transition cursor-pointer">
               Professional Learnings
             </button>
 

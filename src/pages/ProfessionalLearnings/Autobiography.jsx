@@ -1,42 +1,58 @@
 import React from "react";
+import img1 from "../../assets/autobiography.jpg"; // your autobiography image
 
 const Autobiography = () => {
-  const bgImg =
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80";
-
   return (
     <div
-      className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${bgImg})` }}
+      className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat flex"
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1500534314209-a26db0f5a59a?auto=format&fit=crop&w=1920&q=80')",
+      }}
     >
-      {/* Overlay */}
+      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]" />
 
-      {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/20">
-          
-          <h1 className="text-4xl font-bold text-white text-center drop-shadow-lg">
+      {/* Content wrapper */}
+      <div className="relative z-10 flex w-full min-h-screen">
+
+        {/* LEFT — IMAGE */}
+        <div className="w-1/2 flex items-center justify-center p-10">
+          <div className="w-96 h-96 rounded-2xl overflow-hidden border-4 border-green-700 shadow-2xl">
+            <img
+              src={img1}
+              alt="Autobiography"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        {/* RIGHT — TEXT */}
+        <div className="w-1/2 flex flex-col justify-center px-12 py-20 text-white space-y-6">
+
+          <h1 className="text-4xl font-bold drop-shadow-lg">
             Autobiography
           </h1>
 
-          <p className="text-green-100 mt-6 leading-8 text-lg">
-            My journey in Art Education is shaped by meaningful experiences,
-            cultural influences, and a genuine passion for creativity. Growing
-            up, I discovered that art was more than a subject—it was a language
-            through which I could express emotions, ideas, and perspectives that
-            words could not capture.
+          <p className="text-green-100 text-lg leading-relaxed">
+            My story is rooted in creativity, curiosity, and a growing passion for 
+            art education. Throughout my journey, I have discovered how the arts can 
+            shape identity, build community, and inspire deep reflection.
           </p>
 
-          <p className="text-green-100 mt-6 leading-8 text-lg">
-            As I continue my studies at the University of Regina, I am learning
-            to embrace new methods of teaching, value diverse artistic voices,
-            and create inclusive spaces for students. My story is one of growth,
-            exploration, and a deep commitment to helping others experience the
-            transformative power of art.
+          <p className="text-green-100 text-lg leading-relaxed">
+            My experiences, both personal and academic, have helped me understand 
+            the importance of expression whether through painting, drawing, storytelling, or simply observing the world with intention.
           </p>
 
+          <p className="text-green-100 text-lg leading-relaxed">
+            As I continue my path as an educator, I strive to create learning spaces 
+            where creativity is celebrated, every voice matters, and students feel 
+            empowered to explore who they are. Art has shaped my journey, and it 
+            continues to guide the way I see, teach, and connect with others.
+          </p>
         </div>
+
       </div>
     </div>
   );

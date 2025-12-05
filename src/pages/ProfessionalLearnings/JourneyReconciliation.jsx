@@ -38,14 +38,14 @@ const JourneyReconciliation = () => {
           <p className="text-green-100 text-lg leading-relaxed">
             As a future educator, I am committed to creating learning spaces where all
             students feel valued, respected, and represented. Reconciliation is an ongoing
-            process — one that requires humility, empathy, and continuous growth.
+            process, one that requires humility, empathy, and continuous growth.
           </p>
 
         </div>
 
         {/* RIGHT: IMAGE */}
         <div className="w-1/2 flex items-center justify-center p-10">
-          <div className="w-100 h-100 rounded-2xl overflow-hidden border-4 border-green-700 shadow-2xl">
+          <div className="w-200 h-200 rounded-2xl overflow-hidden border-4 border-green-700 shadow-2xl">
             <img
               src={img1}
               alt="Reconciliation"
