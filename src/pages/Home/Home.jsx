@@ -1,38 +1,43 @@
 import React from "react";
-import myPhoto from "../../assets/my-photo.jpg";  // your real picture
+import myPhoto from "../../assets/my-photo.jpg";
 
 const Home = () => {
   return (
     <div
-      className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat"
+      className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat flex"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee')",
+          "url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1920&q=80')",
       }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]" />
 
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
-        {/* Profile Image */}
-        <div className="p-1 rounded-full bg-white/20 backdrop-blur-md shadow-xl">
-          <img
-            src={myPhoto}
-            alt="Profile"
-            className="w-40 h-40 rounded-full object-cover ring-4 ring-green-700 shadow-lg"
-          />
+      {/* Content Layout */}
+      <div className="relative z-10 flex w-full min-h-screen">
+
+        {/* LEFT HALF — IMAGE */}
+        <div className="w-1/2 flex items-center justify-center p-10">
+          <div className="w-100 h-100 rounded-2xl overflow-hidden shadow-2xl border-4 border-green-700">
+            <img
+              src={myPhoto}
+              alt="Profile"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
-        {/* Text */}
-        <h1 className="mt-6 text-4xl md:text-5xl font-bold text-white drop-shadow-xl text-center">
-          Welcome to My Portfolio
-        </h1>
+        {/* RIGHT HALF — TEXT */}
+        <div className="w-1/2 flex flex-col items-center justify-center text-center px-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-xl">
+            Welcome to My Portfolio
+          </h1>
 
-        <p className="mt-4 text-lg md:text-xl text-green-200 max-w-xl text-center drop-shadow">
-          Exploring creativity, learning, and expression through the world of
-          Art Education at the University of Regina.
-        </p>
+          <p className="mt-6 text-lg md:text-xl text-green-200 max-w-lg drop-shadow">
+            Exploring creativity, learning, and expression through the world of
+            Art Education at the University of Regina.
+          </p>
+        </div>
       </div>
     </div>
   );

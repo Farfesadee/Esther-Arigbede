@@ -39,12 +39,12 @@ const FieldExperiences = () => {
           <img
             src={img1}
             alt="Field Experience 1"
-            className="w-full h-64 object-cover rounded-xl shadow-lg ring-2 ring-green-700"
+            className="w-full h-100 object-cover rounded-xl shadow-lg ring-2 ring-green-700"
           />
           <img
             src={img2}
             alt="Field Experience 2"
-            className="w-full h-64 object-cover rounded-xl shadow-lg ring-2 ring-green-700"
+            className="w-full h-100 object-cover rounded-xl shadow-lg ring-2 ring-green-700"
           />
         </div>
 
