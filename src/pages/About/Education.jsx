@@ -22,7 +22,7 @@ const Education = () => {
 
           <p className="text-green-100 mt-6 leading-8 text-lg">
             {/* Keep this simple as you requested */}
-            My educational journey includes foundational studies in Art
+            My educational journey includes Early Childhood Education,  foundational studies in Art
             Education, focusing on creativity, visual expression, and
             pedagogical approaches for young learners. I continue to build my
             skills in visual arts, classroom engagement, and inclusive learning

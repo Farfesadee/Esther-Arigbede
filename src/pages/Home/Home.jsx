@@ -33,9 +33,18 @@ const Home = () => {
             Welcome to My Portfolio
           </h1>
 
-          <p className="mt-6 text-lg md:text-xl text-green-200 max-w-lg drop-shadow">
-            Exploring creativity, learning, and expression through the world of
-            Art Education at the University of Regina.
+          <p className="mt-6 text-lg md:text-xl text-green-200 max-w-lg drop-shadow leading-relaxed">
+            Welcome to my learning journey a space where creativity, curiosity,
+            and early childhood education come together. As a student in Early Childhood
+            Education at the University of Regina, I am passionate about understanding how
+            young children learn, express themselves, and make meaning of the world around them.
+            <br /><br />
+            This portfolio reflects who I am becoming as an educator: someone who values
+            imagination, celebrates diversity, and believes in nurturing children’s natural
+            sense of wonder. Through play, art, storytelling, and meaningful relationships,
+            I strive to support each child’s growth in a warm, inclusive, and engaging environment.
+            You’re invited to explore my work, my experiences, and the moments shaping the teacher
+            I aspire to be.
           </p>
         </div>
       </div>

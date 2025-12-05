@@ -35,22 +35,39 @@ const Autobiography = () => {
           </h1>
 
           <p className="text-green-100 text-lg leading-relaxed">
-            My story is rooted in creativity, curiosity, and a growing passion for 
-            art education. Throughout my journey, I have discovered how the arts can 
-            shape identity, build community, and inspire deep reflection.
+            Growing up in a close-knit community in the Mid-Western part of Nigeria shaped 
+            my values, identity, and understanding of the world. I was surrounded by culture, 
+            stories, and relationships that gradually inspired my passion for education. My 
+            journey toward becoming a teacher was not a single event, but a collection of 
+            experiences that revealed the transformative power of learning.
+          </p>
+
+          {/* <p className="text-green-100 text-lg leading-relaxed">
+            One of the most defining influences in my life was my mathematics teacher, 
+            <span className="font-semibold text-green-200"> Mr. Olajinre</span>, whose patience, 
+            creativity, and student-centered approach changed how I saw learning. His classroom 
+            made math enjoyable and accessible, and his dedication helped me understand how 
+            powerful inclusive teaching can be. My own struggles with math strengthened my 
+            resilience and deepened my belief in differentiated instruction—meeting students 
+            where they are and helping them grow confidently.
+          </p> */}
+
+          <p className="text-green-100 text-lg leading-relaxed">
+            My passion for teaching continued to grow when I volunteered as a peer mentor for 
+            elementary learners. Supporting students from underserved communities showed me the 
+            importance of equity, belonging, and representation in education. Seeing a shy student 
+            gradually gain confidence reminded me that teaching is not only academic—it is deeply 
+            relational and rooted in empathy.
           </p>
 
           <p className="text-green-100 text-lg leading-relaxed">
-            My experiences, both personal and academic, have helped me understand 
-            the importance of expression whether through painting, drawing, storytelling, or simply observing the world with intention.
+            These experiences shaped my belief that education should inspire curiosity, foster 
+            resilience, and value every learner’s voice. As I continue my journey as an educator, 
+            I hope to create learning spaces where students feel seen, empowered, and supported. 
+            My story is still unfolding, but it is built on a foundation of passion, reflection, 
+            and a commitment to transformative teaching.
           </p>
 
-          <p className="text-green-100 text-lg leading-relaxed">
-            As I continue my path as an educator, I strive to create learning spaces 
-            where creativity is celebrated, every voice matters, and students feel 
-            empowered to explore who they are. Art has shaped my journey, and it 
-            continues to guide the way I see, teach, and connect with others.
-          </p>
         </div>
 
       </div>
